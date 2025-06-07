@@ -1,6 +1,8 @@
+# Minimal Mistakes Theme Settings
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
 
+# Site Settings
 locale: "ko-KR"
 title: "dekmanfactory의 블로그"
 title_separator: "-"
@@ -19,6 +21,7 @@ enable_copy_code_button: true
 copyright: "dekmanfactory"
 copyright_url: "https://dekmanfactory.github.io"
 
+# Comments
 comments:
   provider: false
   disqus:
@@ -38,21 +41,25 @@ comments:
     lang: "ko"
     lazy: false
 
+# Search
 search: true
 search_full_content: false
 
+# Verification
 google_site_verification: ""
 bing_site_verification: ""
 naver_site_verification: ""
 yandex_site_verification: ""
 baidu_site_verification: ""
 
+# Social Sharing
 twitter:
   username: ""
 facebook:
   username: ""
 og_image: ""
 
+# Social Links
 social:
   type: "Person"
   name: "dekmanfactory"
@@ -67,12 +74,14 @@ social:
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
 
+# Analytics
 analytics:
   provider: "google"
   google:
     tracking_id: ""
     anonymize_ip: false
 
+# Author
 author:
   name: "dekmanfactory"
   avatar: ""
@@ -87,6 +96,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.email@example.com"
 
+# Footer Links
 footer:
   links:
     - label: "GitHub"
@@ -96,6 +106,7 @@ footer:
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.email@example.com"
 
+# Include/Exclude
 include:
   - .htaccess
   - _pages
@@ -133,6 +144,7 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Markdown Processing
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -144,39 +156,45 @@ kramdown:
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
-  entity_output: as_char
+  entity_output: "as_char"
   toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  smart_quotes: "lsquo,rsquo,ldquo,rdquo"
   enable_coderay: false
 
+# Sass/SCSS
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir: "_sass"
+  style: "compressed"
 
-permalink: /:categories/:title/
+# Permalinks
+permalink: "/:categories/:title/"
 timezone: "Asia/Seoul"
 
+# Pagination
 paginate: 5
-paginate_path: /page:num/
+paginate_path: "/page:num/"
 
+# Archives
 category_archive:
-  type: liquid
-  path: /categories/
+  type: "liquid"
+  path: "/categories/"
 tag_archive:
-  type: liquid
-  path: /tags/
+  type: "liquid"
+  path: "/tags/"
 
+# HTML Compression
 compress_html:
-  clippings: all
+  clippings: "all"
   ignore:
-    envs: development
+    envs: "development"
 
+# Defaults
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: false
@@ -184,6 +202,7 @@ defaults:
       related: true
       show_date: true
 
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -191,9 +210,20 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+# Whitelist
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+# Navigation (메뉴 추가 예시)
+navigation:
+  main:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+    - title: "Archive"
+      url: "/archive/"
