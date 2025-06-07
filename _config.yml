@@ -1,229 +1,161 @@
-# Minimal Mistakes Theme Settings
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default"
+# ---------------------------
+# 필수 설정
+# ---------------------------
 
-# Site Settings
-locale: "ko-KR"
-title: "dekmanfactory의 블로그"
-title_separator: "-"
-subtitle: "개발과 일상 이야기"
-name: "dekmanfactory"
-description: "dekmanfactory의 개발 블로그입니다."
-url: "https://dekmanfactory.github.io"
-baseurl: ""
-repository: "dekmanfactory/dekmanfactory.github.io"
-teaser: ""
-logo: ""
-masthead_title: ""
-breadcrumbs: false
-words_per_minute: 200
-enable_copy_code_button: true
-copyright: "dekmanfactory"
-copyright_url: "https://dekmanfactory.github.io"
+title                    : "SQLD 학습 블로그"
+title_separator          : "-"
+subtitle                 : "150개 세트로 마스터하는 SQLD"
+name                     : &name "Dekman"
+description              : &description "SQLD 시험 대비 이론 요약과 실전 문제 풀이를 위한 블로그입니다."
+locale                   : "ko-KR"
 
-# Comments
-comments:
-  provider: false
-  disqus:
-    shortname: ""
-  utterances:
-    theme: "github-light"
-    issue_term: "pathname"
-  giscus:
-    repo_id: ""
-    category_name: ""
-    category_id: ""
-    discussion_term: "pathname"
-    reactions_enabled: "1"
-    theme: "light"
-    input_position: "bottom"
-    emit_metadata: "0"
-    lang: "ko"
-    lazy: false
+url                      : "https://dekmanfactory.github.io"
+baseurl                  : "" # 루트 도메인에 배포되면 공란
 
-# Search
-search: true
-search_full_content: false
+repository               : "dekmanfactory/dekmanfactory.github.io"
 
-# Verification
-google_site_verification: ""
-bing_site_verification: ""
-naver_site_verification: ""
-yandex_site_verification: ""
-baidu_site_verification: ""
+# ---------------------------
+# 테마 및 스타일
+# ---------------------------
 
-# Social Sharing
-twitter:
-  username: ""
-facebook:
-  username: ""
-og_image: ""
+remote_theme             : "mmistakes/minimal-mistakes@master"
+minimal_mistakes_skin    : "default"
 
-# Social Links
-social:
-  type: "Person"
-  name: "dekmanfactory"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.email@example.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dekmanfactory"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+logo                     : "/assets/images/site-logo.png" # optional
 
-# Analytics
-analytics:
-  provider: "google"
-  google:
-    tracking_id: ""
-    anonymize_ip: false
+# ---------------------------
+# 사용자 정보
+# ---------------------------
 
-# Author
 author:
-  name: "dekmanfactory"
-  avatar: ""
-  bio: "개발과 일상을 기록합니다."
-  location: ""
-  email: ""
+  name          : *name
+  avatar        : "/assets/images/avatar.png" # optional
+  bio           : "SQLD 합격을 위한 전략적 콘텐츠 제공"
+  location      : "Korea"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dekmanfactory"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.email@example.com"
 
-# Footer Links
+# ---------------------------
+# 내비게이션 메뉴 (선택)
+# ---------------------------
+
+# main:
+#   - title: "이론 정리"
+#     url: /categories/theory/
+#   - title: "실전 문제"
+#     url: /categories/practice/
+#   - title: "소개"
+#     url: /about/
+
+# ---------------------------
+# Footer 링크
+# ---------------------------
+
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dekmanfactory"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.email@example.com"
 
-# Include/Exclude
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - minimal-mistakes-jekyll.gemspec
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs
-  - /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# ---------------------------
+# 기능 설정
+# ---------------------------
 
-# Markdown Processing
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+enable_copy_code_button : true
+search                  : true
+search_full_content     : true
+search_provider         : lunr
+
+comments:
+  provider              : false
+
+analytics:
+  provider              : false
+
+# ---------------------------
+# 기본 설정
+# ---------------------------
+
+timezone                : "Asia/Seoul"
+encoding                : "utf-8"
+markdown                : kramdown
+highlighter             : rouge
+markdown_ext            : "markdown,mkdown,mkdn,mkd,md"
 
 kramdown:
   input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: "as_char"
-  toc_levels: 1..6
-  smart_quotes: "lsquo,rsquo,ldquo,rdquo"
-  enable_coderay: false
 
-# Sass/SCSS
 sass:
-  sass_dir: "_sass"
-  style: "compressed"
+  style: compressed
 
-# Permalinks
-permalink: "/:categories/:title/"
-timezone: "Asia/Seoul"
+permalink: /:categories/:title/
 
-# Pagination
-paginate: 5
-paginate_path: "/page:num/"
+# ---------------------------
+# 컬렉션
+# ---------------------------
 
-# Archives
-category_archive:
-  type: "liquid"
-  path: "/categories/"
-tag_archive:
-  type: "liquid"
-  path: "/tags/"
+collections:
+  posts:
+    output: true
 
-# HTML Compression
-compress_html:
-  clippings: "all"
-  ignore:
-    envs: "development"
+# ---------------------------
+# 기본 값 설정
+# ---------------------------
 
-# Defaults
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "single"
+      layout: single
       author_profile: true
       read_time: true
       comments: false
       share: true
       related: true
-      show_date: true
 
-# Plugins
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# ---------------------------
+# 플러그인
+# ---------------------------
+
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
   - jekyll-include-cache
 
-# Whitelist
 whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
   - jekyll-include-cache
 
-# Navigation (메뉴 추가 예시)
-navigation:
-  main:
-    - title: "Home"
-      url: "/"
-    - title: "About"
-      url: "/about/"
-    - title: "Archive"
-      url: "/archive/"
+# ---------------------------
+# 빌드 제외 파일
+# ---------------------------
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - tmp
+  - log
+  - .jekyll-cache
+  - .sass-cache
+  - .github
+
+keep_files:
+  - .git
