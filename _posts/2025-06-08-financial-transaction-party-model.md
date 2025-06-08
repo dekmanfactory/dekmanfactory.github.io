@@ -1,9 +1,13 @@
 ---
-layout: post
+layout: single
 title: "금융 거래 당사자 모델 - 상속 관계 데이터베이스 설계"
 date: 2025-06-08
 categories: [database, design]
 tags: [database, inheritance, modeling, 금융, 설계]
+toc: true
+toc_sticky: true
+sidebar:
+  nav: "main"
 ---
 
 다음 상속 관계 모델을 관계형 데이터베이스 테이블로 구현할 때, 적절하지 않은 설계 방식은?
