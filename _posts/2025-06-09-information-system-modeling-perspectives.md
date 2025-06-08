@@ -1,17 +1,19 @@
 ---
 layout: single
 title: "정보시스템 모델링의 세 가지 관점"
-date: 2025-06-08
+date: 2025-06-09
 categories:
-  - 정보시스템
-  - 시스템분석설계
-  - 모델링
+  - Information Systems
+  - System Analysis
+  - Software Engineering
 tags:
-  - 데이터모델링
-  - 프로세스모델링
-  - 시스템분석
-  - 요구사항분석
-  - 정보시스템설계
+  - 정보시스템
+  - 모델링
+  - 데이터 관점
+  - 프로세스 관점
+  - 상관 관점
+  - 시스템 설계
+  - 업무 분석
 sidebar:
   nav: "main"
 toc: true
