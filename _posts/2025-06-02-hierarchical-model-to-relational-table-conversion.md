@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "계층형 데이터 모델을 관계형 테이블로 변환하는 방법"
-date: 2025-06-08
+date: 2025-06-02
 categories:
   - Database
   - Data-Modeling
