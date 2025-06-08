@@ -1,0 +1,9 @@
+main:
+  - title: "홈"
+    url: "/"
+  - title: "SQLD 이론"
+    children:
+      - title: "Welcome"
+        url: /sqld/2025/06/08/welcome/
+      - title: "Financial Transaction Party Model"
+        url: /database/design/2025/06/08/financial-transaction-party-model/
