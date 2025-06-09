@@ -1,12 +1,31 @@
-# main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "시작"
+    url: /categories/#시작
+
+  - title: "이론"
+    children:
+      - title: "계층형 모델 → 관계형 테이블"
+        url: /2025/06/02/hierarchical-model-to-relational-table-conversion/
+      - title: "정보시스템 모델링 관점"
+        url: /2025/06/09/information-system-modeling-perspectives/
+      - title: "엔터티 분류 - 시간 순서"
+        url: /2025/06/09/entity-classification-by-temporal-order/
+
+  - title: "문제풀이"
+    children:
+      - title: "금융 거래 당사자 모델"
+        url: /2025/06/08/financial-transaction-party-model/
+      - title: "전자상거래 모델링 퀴즈"
+        url: /2025/06/09/ecommerce-modeling-quiz/
+      - title: "엔터티 시간 분류 퀴즈 1"
+        url: /2025/06/09/entity-temporal-classification-quiz-1/
+      - title: "엔터티 시간 분류 퀴즈 2"
+        url: /2025/06/09/entity-temporal-classification-quiz-2/
+      - title: "엔터티 시간 분류 퀴즈 3"
+        url: /2025/06/09/entity-temporal-classification-quiz-3/
+      - title: "병원 시스템 모델링 퀴즈"
+        url: /2025/06/09/hospital-information-system-modeling-quiz/
+      - title: "시스템 분석 관점 퀴즈"
+        url: /2025/06/09/system-analysis-perspective-quiz/
+      - title: "SQL 부서별 상위 3명 급여"
+        url: /2025/06/09/sql-window-function-department-top3-salary/
